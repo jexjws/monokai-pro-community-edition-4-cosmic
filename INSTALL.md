@@ -1,15 +1,14 @@
-# Monokai Pro (Community Edition) for [My App](https://my-app.url)
+# Monokai Pro (Community Edition) for [COSMIC desktop](https://system76.com/cosmic)
 
 ## Installation instructions
 
 Clone from Github:
 
 ```zsh
-git clone https://github.com/monokai-pro/my-app.git
+git clone https://github.com/jexjws/monokai-pro-community-edition-4-cosmic
 ```
 
 ### Activating theme
 
-1. Copy the files
-2. Activate theme
-3. Enjoy!
+1. COSMIC Settings → Desktop → Appearance → Import，select monokai-pro-ce-cosmic.ron
+2. Enjoy!

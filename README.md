@@ -1,4 +1,4 @@
-# Monokai Pro (CE) for [My App](https://my-app.url)
+# Monokai Pro (CE) for [COSMIC desktop](https://system76.com/cosmic)
 
 ![Screenshot](screenshot.png)
 

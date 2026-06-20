@@ -1,0 +1,356 @@
+// Monokai Pro (CE) for COSMIC desktop
+//
+// A community COSMIC desktop theme inspired by the official Monokai Pro color palette.s
+//
+// COSMIC imports theme files as a serialized ThemeBuilder in RON format.
+// Keep the structure compatible with libcosmic's current ThemeBuilder and CosmicPaletteInner fields.
+//
+// Official Monokai Pro palette used as the base:
+//   #2D2A2E background
+//   #FCFCFA foreground
+//   #FF6188 keyword
+//   #FC9867 argument
+//   #FFD866 string
+//   #A9DC76 function
+//   #78DCE8 class
+//   #AB9DF2 constant
+//   #C1C0C0 dimmed 1
+//   #939293 dimmed 2
+//   #727072 dimmed 3
+//   #5B595C dimmed 4
+//   #403E41 dimmed 5
+//   #221F22 bg dimmed 1
+//   #19181A bg dimmed 2
+//
+// Design notes:
+// - The core semantic colors stay on the official Monokai Pro palette.
+// - COSMIC needs an 11-step neutral ramp, so neutral_8 and neutral_9 are
+//   interpolated helper stops between dimmed 1 and foreground.
+//   They are not official palette originals, but they make the theme better
+//   suited to COSMIC's token-based UI system.
+// - The main accent uses Monokai Pro "string" yellow (#FFD866), matching the
+//   classic Monokai highlight feel while remaining readable on the dark base.
+
+(
+    // Monokai Pro is fundamentally a dark editor theme.
+    palette: Dark((
+        name: "Monokai Pro (CE)",
+        // keyword: #FF6188. Also reused for red/pink accents and destructive states.
+        bright_red: (
+            red: 1.00000000,
+            green: 0.38039216,
+            blue: 0.53333333,
+            alpha: 1.0,
+        ),
+        // function: #A9DC76. Used as the success color.
+        bright_green: (
+            red: 0.66274510,
+            green: 0.86274510,
+            blue: 0.46274510,
+            alpha: 1.0,
+        ),
+        // argument: #FC9867. Used as the warning/orange color.
+        bright_orange: (
+            red: 0.98823529,
+            green: 0.59607843,
+            blue: 0.40392157,
+            alpha: 1.0,
+        ),
+        // bg dimmed 2: #19181A. Deepest neutral surface.
+        gray_1: (
+            red: 0.09803922,
+            green: 0.09411765,
+            blue: 0.10196078,
+            alpha: 1.0,
+        ),
+        // bg dimmed 1: #221F22. Secondary deep surface.
+        gray_2: (
+            red: 0.13333333,
+            green: 0.12156863,
+            blue: 0.13333333,
+            alpha: 1.0,
+        ),
+        // Neutral ramp, darkest to lightest. These tokens drive many COSMIC surfaces,
+        // borders, text colors, hover states, and derived component colors.
+        // bg dimmed 2: #19181A
+        neutral_0: (
+            red: 0.09803922,
+            green: 0.09411765,
+            blue: 0.10196078,
+            alpha: 1.0,
+        ),
+        // bg dimmed 1: #221F22
+        neutral_1: (
+            red: 0.13333333,
+            green: 0.12156863,
+            blue: 0.13333333,
+            alpha: 1.0,
+        ),
+        // background: #2D2A2E
+        neutral_2: (
+            red: 0.17647059,
+            green: 0.16470588,
+            blue: 0.18039216,
+            alpha: 1.0,
+        ),
+        // dimmed 5: #403E41
+        neutral_3: (
+            red: 0.25098039,
+            green: 0.24313725,
+            blue: 0.25490196,
+            alpha: 1.0,
+        ),
+        // dimmed 4: #5B595C
+        neutral_4: (
+            red: 0.35686275,
+            green: 0.34901961,
+            blue: 0.36078431,
+            alpha: 1.0,
+        ),
+        // dimmed 3: #727072
+        neutral_5: (
+            red: 0.44705882,
+            green: 0.43921569,
+            blue: 0.44705882,
+            alpha: 1.0,
+        ),
+        // dimmed 2: #939293
+        neutral_6: (
+            red: 0.57647059,
+            green: 0.57254902,
+            blue: 0.57647059,
+            alpha: 1.0,
+        ),
+        // dimmed 1: #C1C0C0
+        neutral_7: (
+            red: 0.75686275,
+            green: 0.75294118,
+            blue: 0.75294118,
+            alpha: 1.0,
+        ),
+        // Interpolated COSMIC helper stop between dimmed 1 and foreground.
+        // Not an official Monokai Pro palette original.
+        neutral_8: (
+            red: 0.84705882,
+            green: 0.84313725,
+            blue: 0.84313725,
+            alpha: 1.0,
+        ),
+        // Interpolated COSMIC helper stop between dimmed 1 and foreground.
+        // Not an official Monokai Pro palette original.
+        neutral_9: (
+            red: 0.92549020,
+            green: 0.92156863,
+            blue: 0.91764706,
+            alpha: 1.0,
+        ),
+        // foreground: #FCFCFA
+        neutral_10: (
+            red: 0.98823529,
+            green: 0.98823529,
+            blue: 0.98039216,
+            alpha: 1.0,
+        ),
+        // class: #78DCE8
+        accent_blue: (
+            red: 0.47058824,
+            green: 0.86274510,
+            blue: 0.90980392,
+            alpha: 1.0,
+        ),
+        // constant: #AB9DF2
+        accent_indigo: (
+            red: 0.67058824,
+            green: 0.61568627,
+            blue: 0.94901961,
+            alpha: 1.0,
+        ),
+        // constant: #AB9DF2
+        accent_purple: (
+            red: 0.67058824,
+            green: 0.61568627,
+            blue: 0.94901961,
+            alpha: 1.0,
+        ),
+        // keyword: #FF6188
+        accent_pink: (
+            red: 1.00000000,
+            green: 0.38039216,
+            blue: 0.53333333,
+            alpha: 1.0,
+        ),
+        // keyword: #FF6188
+        accent_red: (
+            red: 1.00000000,
+            green: 0.38039216,
+            blue: 0.53333333,
+            alpha: 1.0,
+        ),
+        // argument: #FC9867
+        accent_orange: (
+            red: 0.98823529,
+            green: 0.59607843,
+            blue: 0.40392157,
+            alpha: 1.0,
+        ),
+        // string: #FFD866. Chosen as the primary UI accent.
+        accent_yellow: (
+            red: 1.00000000,
+            green: 0.84705882,
+            blue: 0.40000000,
+            alpha: 1.0,
+        ),
+        // function: #A9DC76
+        accent_green: (
+            red: 0.66274510,
+            green: 0.86274510,
+            blue: 0.46274510,
+            alpha: 1.0,
+        ),
+        // dimmed 1: #C1C0C0
+        accent_warm_grey: (
+            red: 0.75686275,
+            green: 0.75294118,
+            blue: 0.75294118,
+            alpha: 1.0,
+        ),
+        // Extension colors mirror the same Monokai Pro semantic palette for apps
+        // that consume COSMIC extended color tokens.
+        // dimmed 2: #939293
+        ext_warm_grey: (
+            red: 0.57647059,
+            green: 0.57254902,
+            blue: 0.57647059,
+            alpha: 1.0,
+        ),
+        // argument: #FC9867
+        ext_orange: (
+            red: 0.98823529,
+            green: 0.59607843,
+            blue: 0.40392157,
+            alpha: 1.0,
+        ),
+        // string: #FFD866
+        ext_yellow: (
+            red: 1.00000000,
+            green: 0.84705882,
+            blue: 0.40000000,
+            alpha: 1.0,
+        ),
+        // class: #78DCE8
+        ext_blue: (
+            red: 0.47058824,
+            green: 0.86274510,
+            blue: 0.90980392,
+            alpha: 1.0,
+        ),
+        // constant: #AB9DF2
+        ext_purple: (
+            red: 0.67058824,
+            green: 0.61568627,
+            blue: 0.94901961,
+            alpha: 1.0,
+        ),
+        // keyword: #FF6188
+        ext_pink: (
+            red: 1.00000000,
+            green: 0.38039216,
+            blue: 0.53333333,
+            alpha: 1.0,
+        ),
+        // constant: #AB9DF2
+        ext_indigo: (
+            red: 0.67058824,
+            green: 0.61568627,
+            blue: 0.94901961,
+            alpha: 1.0,
+        ),
+    )),
+    // Keep COSMIC default spacing. The theme changes color and shape, not layout density.
+    spacing: (
+        space_none: 0,
+        space_xxxs: 4,
+        space_xxs: 8,
+        space_xs: 12,
+        space_s: 16,
+        space_m: 24,
+        space_l: 32,
+        space_xl: 48,
+        space_xxl: 64,
+        space_xxxl: 128,
+    ),
+    // Compact, editor-like corner system: softer than square terminals, tighter than
+    // COSMIC defaults. The very large xl radius keeps pill-shaped controls fully rounded.
+    corner_radii: (
+        radius_0: (0.0, 0.0, 0.0, 0.0),
+        radius_xs: (2.0, 2.0, 2.0, 2.0),
+        radius_s: (6.0, 6.0, 6.0, 6.0),
+        radius_m: (8.0, 8.0, 8.0, 8.0),
+        radius_l: (12.0, 12.0, 12.0, 12.0),
+        radius_xl: (999.0, 999.0, 999.0, 999.0),
+    ),
+    // Let the explicit neutral ramp define the grey balance instead of applying
+    // an extra global neutral tint.
+    neutral_tint: None,
+    // background: #2D2A2E
+    bg_color: Some((
+        red: 0.17647059,
+        green: 0.16470588,
+        blue: 0.18039216,
+        alpha: 1.0,
+    )),
+    // dimmed 5: #403E41. Primary raised/container surface.
+    primary_container_bg: Some((
+        red: 0.25098039,
+        green: 0.24313725,
+        blue: 0.25490196,
+        alpha: 1.0,
+    )),
+    // dimmed 4: #5B595C. Secondary surface for stronger separation.
+    secondary_container_bg: Some((
+        red: 0.35686275,
+        green: 0.34901961,
+        blue: 0.36078431,
+        alpha: 1.0,
+    )),
+    // foreground: #FCFCFA
+    text_tint: Some((
+        red: 0.98823529,
+        green: 0.98823529,
+        blue: 0.98039216,
+    )),
+    // string: #FFD866. Main accent and selection-like highlight.
+    accent: Some((
+        red: 1.00000000,
+        green: 0.84705882,
+        blue: 0.40000000,
+    )),
+    // function: #A9DC76
+    success: Some((
+        red: 0.66274510,
+        green: 0.86274510,
+        blue: 0.46274510,
+    )),
+    // argument: #FC9867
+    warning: Some((
+        red: 0.98823529,
+        green: 0.59607843,
+        blue: 0.40392157,
+    )),
+    // keyword: #FF6188
+    destructive: Some((
+        red: 1.00000000,
+        green: 0.38039216,
+        blue: 0.53333333,
+    )),
+    is_frosted: false,
+    gaps: (0, 4),
+    active_hint: 1,
+    // string: #FFD866. Matches the main accent for window focus hints.
+    window_hint: Some((
+        red: 1.00000000,
+        green: 0.84705882,
+        blue: 0.40000000,
+        alpha: 1.0,
+    )),
+)
