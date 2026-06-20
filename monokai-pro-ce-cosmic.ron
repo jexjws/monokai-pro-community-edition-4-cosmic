@@ -347,10 +347,11 @@
     gaps: (0, 4),
     active_hint: 1,
     // string: #FFD866. Matches the main accent for window focus hints.
-    window_hint: Some((
-        red: 1.00000000,
-        green: 0.84705882,
-        blue: 0.40000000,
-        alpha: 1.0,
-    )),
+    // If you want the Accent Color and Window Hint to be different, uncomment the following block.
+    // window_hint: Some((
+    //     red: 1.00000000,
+    //     green: 0.84705882,
+    //     blue: 0.40000000,
+    //     alpha: 1.0,
+    // )),
 )
