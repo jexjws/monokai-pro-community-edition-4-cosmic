@@ -14,4 +14,4 @@ Download the latest `.ron` theme files from the [Releases page](https://github.c
 1. COSMIC Terminal → ☰ → Theme → Import，select `monokai-pro-ce-cosmic-terminal.ron`
 2. Select "Monokai Pro (CE)" from the theme list
 
-> **Note:** If the color scheme doesn't apply after importing, your terminal **Profile** may be overriding the global theme setting. Go to COSMIC Terminal → ☰ → Settings → Profile → Color scheme and set it to **"Use global setting"** (tracking: [pop-os/cosmic-term#855](https://github.com/pop-os/cosmic-term/issues/855)).
+> **Note:** If the color scheme doesn't apply after importing, your terminal **Profile** may be overriding the global theme setting. See also [pop-os/cosmic-term#855](https://github.com/pop-os/cosmic-term/issues/855).
