@@ -7,7 +7,6 @@
 This Monokai Pro Community Edition (CE) theme is maintained by [jexjws](https://github.com/jexjws) and is based on the original [Monokai Pro](https://monokai.pro) theme.
 
 [Installation instructions](INSTALL.md)
-[COSMIC Terminal theme](monokai-pro-ce-cosmic-terminal.ron) also available.
 
 [MIT License](LICENSE.md)
 
