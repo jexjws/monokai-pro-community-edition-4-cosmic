@@ -2,11 +2,7 @@
 
 ## Installation instructions
 
-Clone from Github:
-
-```zsh
-git clone https://github.com/jexjws/monokai-pro-community-edition-4-cosmic
-```
+Download the latest `.ron` theme file from the [Releases page](https://github.com/jexjws/monokai-pro-community-edition-4-cosmic/releases):
 
 ### Activating theme
 
